@@ -40,7 +40,7 @@ services:
       HOST_PROC: /rootfs/proc
       HOST_SYS: /rootfs/sys
       HOST_ETC: /rootfs/etc
-      TELEGRAF_CONFIG_PATH: /etc/telegraf/telegraf.conf
+      #TELEGRAF_CONFIG_PATH: /etc/telegraf/telegraf.conf
     volumes:
       - ./telegraf.conf:/etc/telegraf/telegraf.conf:Z
       - ./collectd:/etc/telegraf/collectd:Z
