@@ -3,9 +3,8 @@
 Pre-Reqs:
 1. Install Ubuntu 20.04
 2. Install xrdp, ssh, curl
-3. Install Docker Compose <https://docs.docker.com/compose/install/>
-4. Install Portainer <https://www.portainer.io/installation/>
-5. Open Portainer and verify that it is linked to your Docker installation
+3. Install Docker <https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-20-04>
+4. Install Docker Compose <https://docs.docker.com/compose/install/>
 
 
 TIG Deployment:
