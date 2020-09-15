@@ -2,7 +2,6 @@ version: "3"
 services:
   grafana:
     image: grafana/grafana
-    container_name: grafana
     restart: always
     ports:
       - 3000:3000
@@ -14,7 +13,6 @@ services:
       - grafana-volume:/var/lib/grafana
   influxdb:
     image: influxdb
-    container_name: influxdb
     restart: always
     ports:
       - 8086:8086
@@ -31,7 +29,6 @@ services:
       - INFLUXDB_ADMIN_PASSWORD=${INFLUXDB_ADMIN_PASSWORD}
   telegraf:
     image: telegraf
-    container_name: telegraf
     restart: always
     ports:
       - 57000:57000
@@ -43,8 +40,6 @@ services:
       HOST_PROC: /rootfs/proc
       HOST_SYS: /rootfs/sys
       HOST_ETC: /rootfs/etc
-      # TELEGRAF_CONFIG_PATH: /etc/telegraf/telegraf.conf
-
     volumes:
       - ./telegraf.conf:/etc/telegraf/telegraf.conf:Z
       - ./collectd:/etc/telegraf/collectd:Z
