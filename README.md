@@ -16,7 +16,7 @@ TIG Deployment:
 - 'docker volume create --name=grafana-volume'
 - 'docker volume create --name=influxdb-volume'
 2. Set docker to swarm mode, 'docker swarm init'
-3. Set passwords for .env file for initial database creation.
+3. Set passwords for .env file for initial database creation. You need to run nano .env and add your variables.
 4. Start the containers: 'docker-compose up -d'
 5. Login to grafana @ http://localhost:3000 ('admin:admin')
 6. Setup Database
