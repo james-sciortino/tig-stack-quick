@@ -4,8 +4,10 @@ Pre-Reqs:
 1. Install Ubuntu 20.04
 2. Install xrdp, ssh, curl, git
 3. Install Docker <https://www.digitalocean.com/community/tutorials/
-4. Initiate a docker swarm (docker swarm init) 
+4. Initiate a Docker Swarm (docker swarm init) 
 5. Install Docker Compose (sudo apt install docker-compose)
+6. Install Portainer
+7. 
 
 
 TIG Deployment:
