@@ -40,9 +40,8 @@ services:
       HOST_PROC: /rootfs/proc
       HOST_SYS: /rootfs/sys
       HOST_ETC: /rootfs/etc
-      TELEGRAF_CONFIG_PATH: /etc/telegraf/telegraf.conf
     volumes:
-     # - ./telegraf.conf:/etc/telegraf/telegraf:Z
+      - ./telegraf.conf:/etc/telegraf/telegraf.conf:Z
       - ./collectd:/etc/telegraf/collectd:Z
       - /var/run/docker.sock:/var/run/docker.sock:ro
       - /sys:/rootfs/sys:ro
