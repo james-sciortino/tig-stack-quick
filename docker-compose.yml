@@ -50,7 +50,7 @@ services:
       - /etc:/rootfs/etc:ro
 networks:
   monitoring:
-    driver: bridge
+    driver: overlay
   backend:
     driver: overlay
 volumes:
